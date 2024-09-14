@@ -27,7 +27,7 @@
             <div class="col-md-6  m-auto mb-5">
                 <div class="row text-center">
                     <div class="col-md-4 col-sm-12 mb-3">
-                        <div class="item p-2 ">
+                        <div class="item p-2 " [ngClass]="optionValue==='cairo'?'checked-border':'item'">
                             <div class="text-end">
                                 <input type="radio"
                                 name="placeItem" id="placeItem"
@@ -42,7 +42,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-12 mb-3">
-                        <div class="item p-2">
+                        <div class="item p-2"  [ngClass]="optionValue==='northBeach'?'checked-border':'item'">
                             <div class="text-end">
                                 <input type="radio" name="placeItem" id="placeItem"
                                 value="northBeach"  formControlName="placeItem">
@@ -57,7 +57,7 @@
 
 
                     <div class="col-md-4 col-sm-12 mb-3">
-                        <div class="item p-2">
+                        <div class="item p-2" [ngClass]="optionValue==='dahab'?'checked-border':'item'">
                             <div class="text-end">
                                 <input type="radio" name="placeItem" id="placeItem"
                                 value="dahab"  formControlName="placeItem">

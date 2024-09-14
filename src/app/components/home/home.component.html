@@ -43,7 +43,7 @@
               الطريقة المختارة لطريقة إنشاء رسالة الحملة
             </p>
             <form action="" [formGroup]="CheckForm" (ngSubmit)="sendDataToParent()">
-              <div class="check p-2">
+              <div class="check p-2" [ngClass]="optionValue==='manualcheck'?'checked-border':'check'">
                 <div class="d-flex  align-items-center justify-content-between">
                   <img src="../assets/images/manual-check.png" alt="">
                   <input type="radio" name="checkItem" id="manualcheck"
@@ -57,7 +57,7 @@
                   قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية، 
                  </p>
               </div>
-              <div class="check p-2 mt-4">
+              <div class="check p-2 mt-4"  [ngClass]="optionValue==='aiCheck'?'checked-border':'check'">
                 <div class="d-flex  align-items-center justify-content-between">
                   <img src="../assets/images/ai-check.png" alt="">
                   <input type="radio" name="checkItem" id="aiCheck"
@@ -71,7 +71,7 @@
                   قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية،   
                  </p>
               </div>
-              <div class="toggling mt-4"  *ngIf="optionValue === 'manualcheck'">
+              <div class="toggling mt-4"  *ngIf="optionValue === 'manualcheck' || optionValue === 'aiCheck'">
                 <h3 class="mt-1">
                   قم بتسمية مشروع أختيار
                 </h3>

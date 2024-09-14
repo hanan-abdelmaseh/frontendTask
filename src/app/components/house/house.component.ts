@@ -31,5 +31,7 @@ export class HouseComponent {
   back(){
     this._Router.navigateByUrl('/place')
   }
- 
+  get optionValue() {
+    return this.houseForm.get('houseItem')?.value;
+  }
 }

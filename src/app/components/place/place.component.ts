@@ -32,5 +32,8 @@ export class PlaceComponent {
 back(){
   this._Router.navigateByUrl('/home')
 }
+get optionValue() {
+  return this.placeForm.get('placeItem')?.value;
+}
   
 }

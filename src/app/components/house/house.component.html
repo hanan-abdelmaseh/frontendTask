@@ -27,7 +27,7 @@
             <div class="col-md-6  m-auto mb-5">
                 <div class="row text-center">
                     <div class="col-md-4 col-sm-12 mb-3">
-                        <div class="item p-2 ">
+                        <div class="item p-2 " [ngClass]="optionValue==='villa'?'checked-border':'item'">
                             <div class="text-end">
                                 <input type="radio"
                                 name="houseItem" id="houseItem"
@@ -42,7 +42,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-12 mb-3">
-                        <div class="item p-2">
+                        <div class="item p-2" [ngClass]="optionValue==='doplex'?'checked-border':'item'">
                             <div class="text-end">
                                 <input type="radio"  name="houseItem" id="houseItem"
                                 value="doplex"  formControlName="houseItem">
@@ -57,7 +57,7 @@
 
 
                     <div class="col-md-4 col-sm-12 mb-3">
-                        <div class="item p-2">
+                        <div class="item p-2" [ngClass]="optionValue==='appartment'?'checked-border':'item'">
                             <div class="text-end">
                                 <input type="radio"
                                 name="houseItem" id="houseItem"
