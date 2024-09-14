@@ -5,7 +5,7 @@ import { filter } from 'rxjs';
 
 
 // Define the possible steps
-type StepName = 'home' | 'place' | 'house'; 
+type StepName = 'home' | 'place' | 'house' |'description'|'typing' |'sending'; 
 
 
 
@@ -20,7 +20,11 @@ export class StepperComponent {
   stepData: Record<StepName, any> = {
     'home': null,
     'place': null,
-    'house': null
+    'house': null,
+    'description':null ,
+    'typing':null,
+    'sending':null
+
   };
 
   constructor(private router: Router) {}
