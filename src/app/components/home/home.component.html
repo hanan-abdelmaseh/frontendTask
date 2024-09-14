@@ -1,0 +1,94 @@
+<section class="home " dir="rtl">
+    <div class="container mt-1">
+      <div class="row">
+        <div class="col-md-5 main-bg">
+          <div class="content  p-5">
+            <h6>
+              <img src="../assets/images/alert.svg" alt="">
+              تهيئة الحملات الإعلانية
+            </h6>
+            <h1 class="mt-5">
+              مرحبًا بك في منصة أختيار عقارات سكنية للتعمير
+            </h1>
+            <p class="mt-1">
+              قم بإضافة عملائك الحاليين إلي نظامك الجديد لتبدأ التجربة""قم بإضافة عملائك الحاليين إلي نظامك الجديد لتبدأ التجربة"
+            </p>
+            <ul>
+              <li class="mb-3">
+                <img src="../assets/images/check.png" alt="">
+                قم بتحميل شعارك وتفاصيل علامتك التجارية
+              </li>
+              <li class="mb-3">
+                <img src="../assets/images/check.png" alt="">
+                اختر وخصص الحقول التي تحتاجها
+              </li>
+              <li class="mb-3">
+                <img src="../assets/images/check.png" alt="">
+                اختر موضوعاً وصمم مظهر استمارتك
+              </li>
+              <li class="mb-3">
+                <img src="../assets/images/check.png" alt="">
+                ضبط رسالة شكر وإجراءات المتابعة
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-md-7">
+          <div class="content p-5">
+            <h4>
+              طريقة بناء الحملة الخاصة بك
+            </h4>
+            <p>
+              الطريقة المختارة لطريقة إنشاء رسالة الحملة
+            </p>
+            <form action="" [formGroup]="CheckForm" (ngSubmit)="sendDataToParent()">
+              <div class="check p-2">
+                <div class="d-flex  align-items-center justify-content-between">
+                  <img src="../assets/images/manual-check.png" alt="">
+                  <input type="radio" name="checkItem" id="manualcheck"
+                  value="manualcheck"  formControlName="checkItem"
+                  >
+                </div>
+                 <h2>
+                  اختيار يدوي
+                 </h2>
+                 <p>
+                  قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية، 
+                 </p>
+              </div>
+              <div class="check p-2 mt-4">
+                <div class="d-flex  align-items-center justify-content-between">
+                  <img src="../assets/images/ai-check.png" alt="">
+                  <input type="radio" name="checkItem" id="aiCheck"
+                  value="aiCheck"  formControlName="checkItem"
+                  >
+                </div>
+                 <h2>
+                  اختيار عن طريق الذكاء الأصطناعي
+                 </h2>
+                 <p>
+                  قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية،   
+                 </p>
+              </div>
+              <div class="toggling mt-4"  *ngIf="optionValue === 'manualcheck'">
+                <h3 class="mt-1">
+                  قم بتسمية مشروع أختيار
+                </h3>
+                <p>
+                  أسم مشروعك يجب ان يكون مميز وواضح
+                </p>
+                <input type="text" formControlName="projectName" class="form-control" placeholder="أسم مشروع مقترح">
+              </div>
+              <div class=" d-flex justify-content-end  btn-box">
+                <button class="btn main-btn"
+                 [class]="CheckForm.invalid?'main-btn':'active'" type="submit" 
+                 [disabled]="CheckForm.invalid">أبدأ الأن</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>

@@ -1,0 +1,26 @@
+@import '../../../assets/styles/color.scss';
+@import '../../../assets/styles/btn.scss';
+.back{
+    color: $secondary-color;
+}
+.close{
+    color: $close-btn;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $black-color;
+}
+p{
+    color: $gray-color;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+h6{
+    color: $text-color;
+}
+.item{
+    border: 1px solid $border-color;
+    border-radius: 6px;
+}

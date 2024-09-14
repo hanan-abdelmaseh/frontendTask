@@ -1,0 +1,36 @@
+@import '../../../assets/styles/color.scss';
+@import '../../../assets/styles/btn.scss';
+.back{
+    color: $secondary-color;
+}
+.close{
+    color: $close-btn;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $black-color;
+}
+
+.next{
+    background-color: $btn-active;
+    color: $white-color;
+    border: none;
+}
+p{
+    color: $gray-color
+}
+label{
+    color: $descriptionItem;
+}
+
+.content{
+    border: 0.75px solid $border-color;
+    border-radius: 10px;
+}
+span{
+    color: $dark-gray;
+}
+.special-border{
+    border-bottom:  1px solid $border-color;
+}

@@ -1,0 +1,54 @@
+<section class="description">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-between">
+                 <button class="btn back" (click)="back()">
+                    <img src="../../../assets/images/arrow-right.png" alt="">
+                    العودة
+                 </button>
+                 <button class="btn close">
+                    <img src="../../../assets/images/close.svg" alt="">
+                 </button>
+            </div>
+            
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-md-12">
+                <h3>
+                    قم بكتابة وصف منزل أحلامك
+                </h3>
+
+                <form [formGroup]="descriptionForm" (ngSubmit)="sendDataToParent()">
+                    <div class="form-group">
+                      <label for="text1" class="mb-1">وصف مختصر عن المنزل</label>
+                      <input type="text" class="form-control w-50 mb-2"  formControlName="descriptionItem1"
+                      id="text1"
+                       placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="mb-1">وصف تعبيري عن المنزل</label>
+                        <p-editor [(ngModel)]="text" formControlName="descriptionItem2" [style]="{ height: '200px'  }" placeholder=""></p-editor>
+                    </div>
+                     
+                
+                     <div class="text-center">
+                        <button type="submit"  
+                        type="submit"   [disabled]="descriptionForm.invalid"
+                        [class]="descriptionForm.invalid?'main-btn':'active'"
+                        class="btn next mt-4">الخطوة التالية</button>
+                        <p>
+                            قم بالضغط على زر "بدء" للبدء في العملية، لادخال معلومات المنزل
+                        </p>
+                     </div>
+                  
+                  </form>
+            </div>
+        </div>
+
+        </div>
+        </section>
+        
+      

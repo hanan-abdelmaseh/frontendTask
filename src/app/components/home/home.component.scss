@@ -1,0 +1,72 @@
+
+@import '../../../assets/styles/color.scss' ;
+@import '../../../assets/styles/btn.scss';
+
+h1{
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+h6{
+    color: $secondary-color;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+h2{
+    color: $text-color;
+    font-size: 1rem;
+    font-weight: 400;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $primary-color;
+}
+p{
+    color: $secondary-color;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.main-bg{
+    background-image: url(../../../assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+    padding: 0;
+    li{
+    list-style-type: none;
+    color: $list-color;
+}
+}
+h4{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: $primary-color;
+}
+.check
+{
+     border: 0.75px solid $border-color;
+    input{
+        cursor: pointer;
+    }
+}
+.checked-border{
+     border: 0.75px solid $btn-active;
+}
+.btn-box{
+   margin-top: 120px;
+}
+
+.active{
+    background-color: $btn-active;
+}
+.toggling{
+    border-top: 1px solid $border-color;
+}
+.show{
+    display: block;
+}
+.hidden{
+    visibility: hidden;
+}

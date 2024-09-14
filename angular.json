@@ -30,9 +30,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/quill/dist/quill.core.css",
+      "node_modules/quill/dist/quill.snow.css",
               "src/styles.scss"
+
             ],
-            "scripts": []
+            "scripts": [
+               "node_modules/quill/dist/quill.core.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e76fefd2-bf7b-4fea-af3c-2f5bf834824b"
   }
 }

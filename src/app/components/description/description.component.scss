@@ -1,0 +1,25 @@
+@import '../../../assets/styles/color.scss';
+@import '../../../assets/styles/btn.scss';
+.back{
+    color: $secondary-color;
+}
+.close{
+    color: $close-btn;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $black-color;
+}
+
+.next{
+    background-color: $btn-active;
+    color: $white-color;
+    border: none;
+}
+p{
+    color: $additional-p;
+}
+label{
+    color: $descriptionItem;
+}

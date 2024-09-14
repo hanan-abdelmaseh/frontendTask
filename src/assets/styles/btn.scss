@@ -1,0 +1,20 @@
+@import '../styles/color.scss' ;
+
+.main-btn{
+    padding :8px 60px 8px 60px;
+    border-radius: 4px;
+    background-color: $btn-no-active;
+    font-weight: 500;
+    color:$white-color
+}
+
+.btn{
+    border:none
+}
+.active{
+    background-color: $btn-active;
+}
+.back:hover{
+   // border: 1px solid  $btn-active;
+    color: $btn-active;
+}

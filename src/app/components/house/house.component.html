@@ -1,0 +1,91 @@
+<section class="house">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-between">
+                 <button class="btn back" (click)=" back()">
+                    <img src="../../../assets/images/arrow-right.png" alt="">
+                    العودة
+                 </button>
+                 <button class="btn close">
+                    <img src="../../../assets/images/close.svg" alt="">
+                 </button>
+            </div>
+            
+        </div>
+        <div class="row text-center  mt-3 ">
+            <div class="col-md-6  m-auto ">
+               <h3>
+                أختر نوع المنزل
+               </h3>
+               <p>
+                قم بأختيار مصدر شقك الأسكانية كل تستكمل باقي الخطوات
+               </p>
+            </div>
+        </div>
+     <form action="" class="mt-5"  [formGroup]="houseForm" (ngSubmit)="sendDataToParent()">
+        <div class="row">
+            <div class="col-md-6  m-auto mb-5">
+                <div class="row text-center">
+                    <div class="col-md-4 col-sm-12 mb-3">
+                        <div class="item p-2 ">
+                            <div class="text-end">
+                                <input type="radio"
+                                name="houseItem" id="houseItem"
+                  value="villa"  formControlName="houseItem">
+                            </div>
+                           
+                            <img src="../../../assets/images/villa.svg" alt="" class="mb-3">
+                            <h6>
+                                فيلا
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 mb-3">
+                        <div class="item p-2">
+                            <div class="text-end">
+                                <input type="radio"  name="houseItem" id="houseItem"
+                                value="doplex"  formControlName="houseItem">
+                            </div>
+                           
+                            <img src="../../../assets/images/doplex.svg" alt="" class="mb-3">
+                            <h6>
+                                شقة دوبليكس
+                            </h6>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-12 mb-3">
+                        <div class="item p-2">
+                            <div class="text-end">
+                                <input type="radio"
+                                name="houseItem" id="houseItem"
+                                value="appartment"  formControlName="houseItem">
+                            </div>
+                           
+                            <img src="../../../assets/images/department.svg" alt="" class="mb-3">
+                            <h6>
+                                شقة سكنية
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         <div class="text-center mt-5 ">
+            <button class="btn main-btn " type="submit"  [class]="houseForm.invalid?'main-btn':'active'">
+                التالي
+            </button>
+            <p class="m-0">
+                نحن هنا لمساعدتك في أختيار منزلك بسهولة وعناية
+            </p>
+            <p>
+                قم بالضغط على زر "بدء" للبدء في العملية، واتبع التوجيهات لإدخال معلومات الحملة
+            </p>
+         </div>
+        </div>
+     </form>
+        
+    </div>
+</section>
+

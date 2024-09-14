@@ -1,0 +1,106 @@
+<section class="typing">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-between">
+                 <button class="btn back" (click)="back()">
+                    <img src="../../../assets/images/arrow-right.png" alt="">
+                    العودة
+                 </button>
+                 <button class="btn close">
+                    <img src="../../../assets/images/close.svg" alt="">
+                 </button>
+            </div>
+            
+        </div>
+
+        <div class="row mt-5">
+            <form action=""  [formGroup]="typingForm" (ngSubmit)="sendDataToParent()">
+            <div class="col-md-md-12">
+                <h3>
+                    قم بكتابة نص الرسالة المرسلة
+                </h3>
+                <p>
+                    قم بتسمية حملتك و تاريخ إرسال الحملة المتوقع
+                </p>
+                </div>
+                <div class="col-md-12">
+                    <div class="content p-4">
+                        <img src="../../../assets/images/calendar-tick.svg" alt="">
+                        <span class="mb-1">
+                        تصميم المنزل </span>
+
+                     
+                            <div class="d-flex">
+                                <div class="">
+                                    <input type="radio" 
+                                    name="typingItem" id="modernItem"
+                  value="modernItem"  formControlName="typingItem">
+                                    تصميم حديث
+                                </div>
+                                <div class="me-5">
+                                    <input type="radio" name="typingItem" id="modernSmartItem"
+                                    value="modernSmartItem"  formControlName="typingItem">
+                                    تصميم حديث وذكي
+                                </div>
+                            </div>
+                          
+                           
+                    
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="content p-4">
+                        <img src="../../../assets/images/eye.svg" alt="">
+                        <span class="mb-1">
+                            معاينة وصف المنزل
+                        </span>
+                        <div  class="special-border">
+                            <div  class="mb-2">
+                                <span >
+                                    الموضوع : فيلا قريبة من التجمع الخامس
+                                </span>
+                            </div>
+                          
+                          
+                        </div>
+                        <div>
+                            <p>
+                                عزيزي [اسم العميل]، <br>
+نحن في [اسم الشركة] نسعى دائمًا لتقديم أفضل الحلول التي تلبي احتياجاتك وتجعل حياتك أسهل. لذلك، يسعدنا أن نعلن عن إطلاق ميزات جديدة ومثيرة في منصتنا!
+ما الجديد؟
+ميزة X: التي تتيح لك [وصف مختصر للميزة وفائدتها].
+ميزة Y: لتمكينك من [وصف مختصر للميزة وفائدتها].
+ميزة Z: التي تساعدك على [وصف مختصر للميزة وفائدتها].
+لماذا تختار [اسم الشركة]؟
+خدمة عملاء متميزة: نحن هنا لدعمك على مدار الساعة.
+أسعار تنافسية: احصل على أفضل قيمة مقابل ما تدفعه.
+أمان وثقة: نحن نحافظ على سرية معلوماتك وأمانها.
+عرض خاص! احصل على خصم بنسبة [نسبة الخصم]% عند استخدام الكود NEWFEATURES أثناء عملية الشراء. العرض ساري حتى [تاريخ انتهاء العرض].
+لا تفوت الفرصة! انقر هنا للاكتشاف الآن: [رابط الموقع]
+إذا كان لديك أي استفسارات أو تحتاج إلى مساعدة، لا تتردد في الاتصال بنا على [بيانات الاتصال].
+شكرًا لاختيارك [اسم الشركة]. نحن نتطلع إلى خدمتك وتقديم أفضل تجربة ممكنة لك.
+مع أطيب التحيات، فريق [اسم الشركة]
+                            </p>
+                        </div>
+                        </div>
+
+                       
+                </div>
+                <div class="text-center mt-5 ">
+                    <button class="btn main-btn " type="submit"  [disabled]="typingForm.invalid"
+            
+                    [class]="typingForm.invalid?'main-btn':'active'">
+                        الخطوة التالية
+                    </button>
+                    <p class="m-0">
+                        قم بالضغط على زر "بدء" للبدء في العملية، لادخال معلومات المنزل
+                    </p>
+                
+                 </div>
+                </form>
+                </div>
+                </div>
+                </section>
+
